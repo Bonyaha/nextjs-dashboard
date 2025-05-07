@@ -36,7 +36,7 @@ export default function Pagination({ totalPages }: { totalPages: number }) {
             if (index === allPages.length - 1) position = 'last';
             if (allPages.length === 1) position = 'single';
             if (page === '...') position = 'middle';
-            console.log(`Page ${page} - Index ${index} - Position ${position}`);
+            //console.log(`Page ${page} - Index ${index} - Position ${position}`);
             return (
               <PaginationNumber
                 key={`${page}-${index}`}
@@ -70,7 +70,7 @@ function PaginationNumber({
   position?: 'first' | 'last' | 'middle' | 'single';
   isActive: boolean;
 }) {
-console.log('href', href);
+//console.log('href', href);
 
   const className = clsx(
     'flex h-10 w-10 items-center justify-center text-sm border',
